@@ -30,12 +30,11 @@ public class BookService {
     }
     
     @Transactional
-    public boolean updateBook(long id, Book updatedBook){
+    public Book updateBook(long id, Book updatedBook){
         Book book = bookRepository.findById(id)
             .orElseThrow(() -> new BookNotFoundException(id));
         book.update(updatedBook);
-        bookRepository.save(book);
-        return true;
+        return bookRepository.save(book);
     }
 
     public void deleteBookWithId(long id){

@@ -41,7 +41,7 @@ public class BookController {
     }
 
     @PutMapping("/api/books/{id}")
-    public Boolean updateBookWithId(@PathVariable Long id, @RequestBody Book updatedBook) {
+    public Book updateBookWithId(@PathVariable Long id, @RequestBody Book updatedBook) {
         return bookService.updateBook(id, updatedBook);
     }
     
