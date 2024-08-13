@@ -41,7 +41,7 @@ public class PatronController {
     }
 
     @PutMapping("/api/patrons/{id}")
-    public Boolean updatePatronWithId(@PathVariable Long id, @RequestBody Patron updatedPatron) {
+    public Patron updatePatronWithId(@PathVariable Long id, @RequestBody Patron updatedPatron) {
         return patronService.updatePatron(id, updatedPatron);
     }
     

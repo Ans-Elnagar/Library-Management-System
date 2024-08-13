@@ -30,12 +30,11 @@ public class PatronService {
     }
 
     @Transactional
-    public boolean updatePatron(long id, Patron updatedPatron){
+    public Patron updatePatron(long id, Patron updatedPatron){
         Patron patron = patronRepository.findById(id)
             .orElseThrow(() -> new PatronNotFoundException(id));
         patron.update(updatedPatron);
-        patronRepository.save(patron);
-        return true;
+        return patronRepository.save(patron);
     }
 
     public void deletePatronWithId(long id){
