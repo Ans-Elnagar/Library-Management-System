@@ -58,4 +58,12 @@ public class Book {
         author = updatedValues.getAuthor();
         publicationYear = updatedValues.getPublicationYear();
     }
+    @Override
+    public String toString(){
+        return 
+            "\nBook content: \n"
+            +"title="+title+"\n"
+            +"author="+author+"\n"
+            +"publication year="+publicationYear+"\n";
+    }
 }

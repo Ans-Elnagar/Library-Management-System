@@ -58,4 +58,13 @@ public class Patron {
         phone = patron.getPhone();
         address = patron.getAddress();
     }
+    @Override
+    public String toString(){
+        return
+            "\nPatron content:\n"
+            +"name="+name+"\n"
+            +"email="+email+"\n"
+            +"address="+address+"\n"
+            +"phone="+phone+"\n";
+    }
 }
