@@ -3,9 +3,9 @@ a Library Management System API using Spring Boot. The system should allow libra
 to manage books, patrons, and borrowing records.
 ### Requirements
 * MySQL database with root pass=root or Docker to run a DB container.  
-  You can set the password to whatever you want but update the the application.properties file.
+  You can set the password to whatever you want but update the application.properties file.
 * Optionally you can use Postman I have already added a suite file of requests to test the API.  
-   The file name is library.postman_collection.json. You can import it in PostMan.
+   The file name is library.postman_collection.json. You can import it in Postman.
 ## How to run
 
 1. First start the DB or Docker container using the following command
